@@ -7,7 +7,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 pb-40" >
+    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 md:pb-40" >
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-full h-full " />
 

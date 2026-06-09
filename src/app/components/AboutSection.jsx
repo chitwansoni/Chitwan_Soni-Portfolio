@@ -7,14 +7,14 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 md:pb-40" >
+    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 md:py-40 md:pb-40" >
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-full h-full " />
 
       {/* Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:110px_110px]" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 ">
         {/* Heading */}
         <h2 className="text-center text-5xl font-bold md:mb-20">
           About Me

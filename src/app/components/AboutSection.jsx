@@ -43,14 +43,15 @@ export default function AboutSection() {
             </h3>
 
             <p className="text-gray-300 leading-8 mb-4">
-              Software Engineering Master&apos;s student at USTHB and
-              freelance web/mobile developer in Algiers.
+Web Developer skilled in Next.js, Tailwind CSS, Flutter, and Git, with
+experience using Figma to turn designs into responsive, user-friendly web and
+app interfaces. 
             </p>
 
             <p className="text-gray-300 leading-8 mb-10">
-              I create tailored solutions using Laravel, React,
-              Flutter, and more for startups and businesses.
-            </p>
+Focused on building high-performance, scalable applications with
+modern frameworks, clean UI/UX, and cross-browser compatibility. Passionate
+about continuous learning and efficient development.            </p>
 
             <div className="space-y-5">
               <div className="flex items-center gap-4 border border-fuchsia-500 rounded-2xl px-6 py-5 bg-black/30">

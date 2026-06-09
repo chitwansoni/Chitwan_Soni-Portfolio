@@ -7,7 +7,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 md:pt-20  md:pb-60" >
+    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 md:pt-20  md:pb-80" >
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-full h-full " />
 
@@ -16,11 +16,11 @@ export default function AboutSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 ">
         {/* Heading */}
-        <h2 className="text-center text-5xl font-bold md:mb-20">
+        <h2 className="text-center text-5xl font-bold md:mb-10">
           About Me
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center text-center md:text-left">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Image */}
           <div className="flex justify-center">
             <div className="relative">
@@ -37,12 +37,12 @@ export default function AboutSection() {
           </div>
 
           {/* Right Content */}
-          <div>
-            <h3 className="text-4xl font-bold text-fuchsia-500 mb-6">
+          <div className="space-y-6 ">
+            <h3 className="text-4xl font-bold text-fuchsia-500 mb-6  text-center ">
               I&apos;m Chitwan Soni
             </h3>
 
-            <p className="text-gray-300 leading-8 mb-4">
+            <p className="text-gray-300 leading-8 mb-4 text-center md:text-justify">
 Web Developer skilled in Next.js, Tailwind CSS, Flutter, and Git, with
 experience using Figma to turn designs into responsive, user-friendly web and
 app interfaces. 

@@ -7,7 +7,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="relative h-full bg-black text-white overflow-hidden py-20" >
+    <section className="relative h-full md:h-[700px] bg-black text-white overflow-hidden py-20 pb-40" >
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-full h-full " />
 
@@ -16,11 +16,11 @@ export default function AboutSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-center text-5xl font-bold mb-20">
+        <h2 className="text-center text-5xl font-bold md:mb-20">
           About Me
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center text-center">
           {/* Left Image */}
           <div className="flex justify-center">
             <div className="relative">
@@ -31,7 +31,7 @@ export default function AboutSection() {
                 alt="About"
                 width={420}
                 height={420}
-                className="relative rounded-full object-cover border-4 border-fuchsia-500"
+                className="relative hidden md:block rounded-full object-cover border-4 border-fuchsia-500"
               />
             </div>
           </div>

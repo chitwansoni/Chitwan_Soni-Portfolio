@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaLinkedinIn } from "react-icons/fa";
 
 export default function HeaderSection() {
   return (
-    <section className="h-[700px] bg-black text-white relative overflow-hidden ">
+    <section className="h-full md:h-[700px] bg-black text-white relative overflow-hidden ">
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#7e22ce40,transparent_60%)]" />
 
@@ -50,7 +50,7 @@ export default function HeaderSection() {
 </nav>
 
       {/* Hero */}
-      <div className="max-w-7xl mx-auto px-6 pt-10 relative z-10 mt-[90px]">
+      <div className="max-w-7xl mx-auto px-6  md:pt-10 relative z-10 mt-[90px] mb-10 md:mb-0 ">
         <div className="grid lg:grid-cols-2 items-center gap-6">
           {/* Left Content */}
           <div>
@@ -73,7 +73,7 @@ export default function HeaderSection() {
                 download="Chitwan_Soni_Resume.pdf" // Download hone par file ka jo naam hoga
                 className="inline-block"
               >
-                <button className="px-8 py-4 rounded-full bg-gradient-to-r from-fuchsia-600 to-pink-500 shadow-[0_0_30px_rgba(217,70,239,0.6)] hover:scale-105 transition">
+                <button className="px-2 md:px-8 py-2 md:py-4 rounded-full bg-gradient-to-r from-fuchsia-600 to-pink-500 shadow-[0_0_30px_rgba(217,70,239,0.6)] hover:scale-105 transition">
                   Download Resume
                 </button>
               </a>
@@ -112,7 +112,7 @@ export default function HeaderSection() {
 
           {/* Right Image */}
           <div className="flex justify-center relative">
-            <div className="absolute w-[380px] h-[380px] rounded-full bg-fuchsia-600 blur-[120px] opacity-40" />
+            <div className="absolute w-[80px] h-[100px] md:w-[380px] md:h-[380px] rounded-full bg-fuchsia-600 blur-[30px] md:blur-[80px] opacity-40" />
 
             <div className="relative">
               <Image

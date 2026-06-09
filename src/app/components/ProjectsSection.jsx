@@ -66,10 +66,10 @@ export default function ProjectsSection() {
         <div className="flex justify-center gap-5 mb-16">
           <button
             onClick={() => setActiveTab("web")}
-            className={`px-8 py-3 rounded-full border transition ${
+            className={`md:px-8 md:py-3 px-2 py-2 rounded-full border transition text-[14px] md:text-[16px] ${
               activeTab === "web"
                 ? "bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white shadow-[0_0_25px_rgba(217,70,239,0.7)]"
-                : "border-fuchsia-500 text-white"
+                : "border-fuchsia-500 text-white "
             }`}
           >
             Web Application
@@ -77,7 +77,7 @@ export default function ProjectsSection() {
 
           <button
             onClick={() => setActiveTab("mobile")}
-            className={`px-8 py-3 rounded-full border transition ${
+            className={`md:px-8 md:py-3 px-2 py-2 rounded-full border transition text-[14px] md:text-[16px] ${
               activeTab === "mobile"
                 ? "bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white shadow-[0_0_25px_rgba(217,70,239,0.7)]"
                 : "border-fuchsia-500 text-white"

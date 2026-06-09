@@ -47,7 +47,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section className="relative   h-full bg-black py-20 overflow-hidden mx-auto px-0">
+    <section className="relative   h-full bg-black py-20 overflow-hidden mx-auto px-4">
       {/* Glow Background */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-fuchsia-500 blur-[100px] opacity-30"></div>
 
@@ -59,16 +59,14 @@ export default function SkillsSection() {
           My Skills
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-x-40 gap-y-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-10 md:gap-x-40 gap-y-10">
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
-                {/* Icon Circle */}
-                <div className="w-12 h-12 rounded-full border border-fuchsia-500 flex items-center justify-center text-2xl text-white shadow-[0_0_15px_rgba(168,85,247,0.4)]">
+                <div className="md:w-12 md:h-12 w-8 h-8 rounded-full border border-fuchsia-500 flex items-center justify-center text-2xl text-white shadow-[0_0_15px_rgba(168,85,247,0.4)]">
                   {skill.icon}
                 </div>
-                {/* Skill Name */}
-                <span className="text-gray-300 font-medium text-lg">{skill.name}</span>
+                <span className="text-gray-300 font-medium text-[14px] md:text-lg">{skill.name}</span>
               </div>
 
               {/* Skill Dots Indicator */}
@@ -76,7 +74,7 @@ export default function SkillsSection() {
                 {[...Array(10)].map((_, i) => (
                   <span
                     key={i}
-                    className={`w-3 h-3 rounded-full transition-all duration-500 ${
+                    className={`md:w-3 w-1 md:h-3 h-1 rounded-full transition-all duration-500 ${
                       i < skill.level
                         ? `${skill.color} shadow-[0_0_8px_rgba(255,255,255,0.3)]`
                         : "bg-zinc-800"
